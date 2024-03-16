@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!--
+thymeleaf는 서버 연동 없이 html 파일 ui 만 확인 할 수 있는 기능을 제공.
+단순 로컬 html 파일을 열었을 때 hello! empty가 출력됨.
+템플릿 엔진으로 동작을하면 hello! empty는 출력되지않고 th:text="'hello ' + ${name}" 가 출력 됨
+-->
+<p th:text="'hello ' + ${name}">hello! empty</p>
+</body>
+</html>
